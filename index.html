@@ -14,10 +14,74 @@
     <p>git log:- to view how many commit we have done yet </p>
     <p>git add . :- to add all commits we use this </p>
     <p>git checkout (hash code EX;-(03b634167107bd40bdd4072e2c5948e683af5e3f)) :- to view how many commit we have done yet </p>
-    <div>Branch Concept </div>
-    <p>So Basicaly branch is like an application like features work on separate branch</p>
-    <p>git branch (branch name):- To Create New Branch </p>
-    <p>git Merge (branch name):- to merge in this Existing branch </p>
+    <div>Branch Concept 
+        <p>So Basicaly branch is like an application like features work on separate branch</p>
+        <p>git branch (branch name):- To Create New Branch </p>
+        <p>git Merge (branch name):- to merge in this Existing branch </p>
+    </div>
+    <div>
+        <h2>Pushing Elements in GitHub using Following Commands </h2>
+        <p>PS E:\gitTutorial> git remote add origin https://github.com/Rohit-Koli/GitTutorial.git
+            PS E:\gitTutorial> git branch -M main
+            PS E:\gitTutorial> git push -u origin main
+            Enumerating objects: 24, done.
+            Counting objects: 100% (24/24), done.
+            Delta compression using up to 8 threads
+            Compressing objects: 100% (23/23), done.
+            Writing objects: 100% (24/24), 2.93 KiB | 600.00 KiB/s, done.
+            Total 24 (delta 6), reused 0 (delta 0), pack-reused 0
+            remote: Resolving deltas: 100% (6/6), done.
+            To https://github.com/Rohit-Koli/GitTutorial.git
+             * [new branch]      main -> main
+            branch 'main' set up to track 'origin/main'.
+            ----------------------------------------
+            PS E:\gitTutorial> git status
+            On branch main
+            Your branch is up to date with 'origin/main'.
+            
+            nothing to commit, working tree clean
+            PS E:\gitTutorial> git branch
+              Hello
+              dev
+            * main
+            ------------------------------------
+            PS E:\gitTutorial> git checkout Hello
+            Switched to branch 'Hello'
+            ------------------------------------            
+            PS E:\gitTutorial> git push origin
+            fatal: The current branch Hello has no upstream branch.
+            To push the current branch and set the remote as upstream, use
+            
+                git push --set-upstream origin Hello
+            
+            To have this happen automatically for branches without a tracking
+            upstream, see 'push.autoSetupRemote' in 'git help config'.
+            ------------------------------------
+
+            
+            PS E:\gitTutorial> git push -u origin Hello
+            Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+            remote: 
+            remote: Create a pull request for 'Hello' on GitHub by visiting:
+            remote:      https://github.com/Rohit-Koli/GitTutorial/pull/new/Hello
+            remote:
+            To https://github.com/Rohit-Koli/GitTutorial.git
+             * [new branch]      Hello -> Hello
+            branch 'Hello' set up to track 'origin/Hello'.
+            ------------------------------------
+
+            PS E:\gitTutorial> git push origin dev
+            Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+            remote: 
+            remote: Create a pull request for 'dev' on GitHub by visiting:
+            remote:      https://github.com/Rohit-Koli/GitTutorial/pull/new/dev
+            remote:
+            To https://github.com/Rohit-Koli/GitTutorial.git
+             * [new branch]      dev -> dev
+            PS E:\gitTutorial> git checkout main
+            Switched to branch 'main'
+            Your branch is up to date with 'origin/main'.</p>
+    </div>
     
 </body>
 </html>
